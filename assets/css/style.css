@@ -1,4 +1,12 @@
 /* General Styling */
+
+body {
+    background: url("../images/dark_wood.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    min-height: 100vh;
+}
+
 h1, h2, h3 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
@@ -11,9 +19,15 @@ hr {
     border: 1px solid #cccccc;
 }
 
+.nav-item:hover {
+    background-color: #4aaaa5;
+}
+
 /* Navbar */
 .navbar-outer-container {
+    background: #ffffff;
     border-bottom: 2px solid #cccccc;
+    padding: 0;
 }
 
 .navbar-inner-container {
@@ -39,12 +53,19 @@ hr {
 .main-container {
     margin-top: 30px;
     padding-top: 30px;
+    background: #ffffff;
     border: 1px solid #cccccc;
+}
+
+.me-img {
+    max-width: 160px;
+    height: auto;
+    margin: 0 1em 0 0;
 }
 
 /* Media Queries */
 @media (min-width: 1200px) {
     .container {
-        max-width: 968px;
+        max-width: 960px;
     }
 }
